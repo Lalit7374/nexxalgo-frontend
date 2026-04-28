@@ -139,10 +139,10 @@ const Contact = () => {
                 <Mail size={20} color="var(--lime)" strokeWidth={1.5} />
                 <h5 className="contact-info-label">Email</h5>
                 <a
-                  href="mailto:alphadeveloper.tech@gmail.com"
+                  href="mailto:info@nexxalgo.com"
                   className="contact-info-value"
                 >
-                  alphadeveloper.tech@gmail.com
+                  info@nexxalgo.com
                 </a>
               </div>
 
