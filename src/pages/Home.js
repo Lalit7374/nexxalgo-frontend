@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import {
   ArrowRight,
   Code2,
@@ -10,76 +10,76 @@ import {
   Boxes,
   Database,
   ArrowUpRight,
-} from 'lucide-react';
-import VantaBackground from '../components/VantaBackground';
-import CountUp from '../components/CountUp';
-import TechStackShowcase from '../components/TechStackShowcase';
+} from "lucide-react";
+import VantaBackground from "../components/VantaBackground";
+import CountUp from "../components/CountUp";
+import TechStackShowcase from "../components/TechStackShowcase";
 
 const services = [
   {
-    n: '01',
+    n: "01",
     icon: Code2,
-    title: 'Full-Stack Web Apps',
-    desc: 'Production-grade MERN applications with clean architecture, auth, payments, and dashboards. Built to scale.',
-    tags: ['React', 'Node.js', 'MongoDB', 'Express'],
+    title: "Full-Stack Web Apps",
+    desc: "Production-grade MERN applications with clean architecture, auth, payments, and dashboards. Built to scale.",
+    tags: ["React", "Node.js", "MongoDB", "Express"],
   },
   {
-    n: '02',
+    n: "02",
     icon: Bot,
-    title: 'AI Agents & Automation',
-    desc: 'Custom GPT-powered agents, RAG chatbots, and workflow automation that genuinely save time.',
-    tags: ['OpenAI', 'LangChain', 'RAG', 'n8n'],
+    title: "AI Agents & Automation",
+    desc: "Custom GPT-powered agents, RAG chatbots, and workflow automation that genuinely save time.",
+    tags: ["OpenAI", "LangChain", "RAG", "n8n"],
   },
   {
-    n: '03',
+    n: "03",
     icon: Smartphone,
-    title: 'Mobile Applications',
-    desc: 'Cross-platform mobile apps with React Native — single codebase, native performance.',
-    tags: ['React Native', 'Expo', 'iOS', 'Android'],
+    title: "Mobile Applications",
+    desc: "Cross-platform mobile apps with React Native — single codebase, native performance.",
+    tags: ["React Native", "Expo", "iOS", "Android"],
   },
   {
-    n: '04',
+    n: "04",
     icon: LineChart,
-    title: 'Algo Trading Systems',
-    desc: 'Strategy automation, backtesting engines, and broker API integrations. Built by traders, for traders.',
-    tags: ['Python', 'Broker APIs', 'Backtesting'],
+    title: "Algo Trading Systems",
+    desc: "Strategy automation, backtesting engines, and broker API integrations. Built by traders, for traders.",
+    tags: ["Python", "Broker APIs", "Backtesting"],
   },
   {
-    n: '05',
+    n: "05",
     icon: Boxes,
-    title: 'SaaS Products',
-    desc: 'From zero to launched product — auth, billing, admin panels, and a roadmap that ships.',
-    tags: ['Stripe', 'Auth', 'Multi-tenant'],
+    title: "SaaS Products",
+    desc: "From zero to launched product — auth, billing, admin panels, and a roadmap that ships.",
+    tags: ["Stripe", "Auth", "Multi-tenant"],
   },
   {
-    n: '06',
+    n: "06",
     icon: Database,
-    title: 'Data & Analytics',
-    desc: 'Dashboards, ETL pipelines, and data products that turn numbers into decisions.',
-    tags: ['Dashboards', 'ETL', 'Reports'],
+    title: "Data & Analytics",
+    desc: "Dashboards, ETL pipelines, and data products that turn numbers into decisions.",
+    tags: ["Dashboards", "ETL", "Reports"],
   },
 ];
 
 const processSteps = [
   {
-    step: 'Step 01',
-    title: 'Discovery & Scope',
-    desc: 'A 30-minute call to understand your goal, audience, and constraints. We send you a written scope and fixed quote within 24 hours — no surprises later.',
+    step: "Step 01",
+    title: "Discovery & Scope",
+    desc: "A 30-minute call to understand your goal, audience, and constraints. We send you a written scope and fixed quote within 24 hours — no surprises later.",
   },
   {
-    step: 'Step 02',
-    title: 'Design & Architecture',
-    desc: 'We design the user flow, data models, and tech stack. You approve before a single line of production code is written.',
+    step: "Step 02",
+    title: "Design & Architecture",
+    desc: "We design the user flow, data models, and tech stack. You approve before a single line of production code is written.",
   },
   {
-    step: 'Step 03',
-    title: 'Build & Iterate',
-    desc: 'Weekly demos, weekly updates, daily Git commits. You see progress in real time — no black boxes.',
+    step: "Step 03",
+    title: "Build & Iterate",
+    desc: "Weekly demos, weekly updates, daily Git commits. You see progress in real time — no black boxes.",
   },
   {
-    step: 'Step 04',
-    title: 'Launch & Support',
-    desc: 'We deploy, monitor, and stay around for 30 days post-launch to fix anything you find. After that, optional retainers.',
+    step: "Step 04",
+    title: "Launch & Support",
+    desc: "We deploy, monitor, and stay around for 30 days post-launch to fix anything you find. After that, optional retainers.",
   },
 ];
 
@@ -118,8 +118,8 @@ const Home = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.35 }}
           >
-            Nexx Algo is a focused team building MERN apps, AI agents, mobile apps,
-            SaaS products, and algo trading systems. Quality over volume —
+            Nexx Algo is a focused team building MERN apps, AI agents, mobile
+            apps, SaaS products, and algo trading systems. Quality over volume —
             we take a small number of projects each quarter.
           </motion.p>
 
@@ -132,9 +132,6 @@ const Home = () => {
             <Link to="/contact" className="btn btn-primary">
               Start a project <ArrowRight size={16} />
             </Link>
-            <Link to="/internships" className="btn btn-ghost">
-              Apply for internship
-            </Link>
           </motion.div>
 
           <motion.div
@@ -144,15 +141,21 @@ const Home = () => {
             transition={{ duration: 1, delay: 0.7 }}
           >
             <div className="hero-meta-item">
-              <span className="num"><CountUp end={12} suffix="+" duration={1800} /></span>
+              <span className="num">
+                <CountUp end={12} suffix="+" duration={1800} />
+              </span>
               <span className="label">Projects shipped</span>
             </div>
             <div className="hero-meta-item">
-              <span className="num"><CountUp end={7} duration={1800} /></span>
+              <span className="num">
+                <CountUp end={7} duration={1800} />
+              </span>
               <span className="label">Service lines</span>
             </div>
             <div className="hero-meta-item">
-              <span className="num"><CountUp end={24} suffix="h" duration={1800} /></span>
+              <span className="num">
+                <CountUp end={24} suffix="h" duration={1800} />
+              </span>
               <span className="label">Avg. response time</span>
             </div>
           </motion.div>
@@ -183,12 +186,21 @@ const Home = () => {
             <div>
               <span className="eyebrow">What we do</span>
               <h2>
-                Six things, <em style={{ fontStyle: 'italic', color: 'var(--accent)', fontWeight: 300 }}>done well.</em>
+                Six things,{" "}
+                <em
+                  style={{
+                    fontStyle: "italic",
+                    color: "var(--accent)",
+                    fontWeight: 300,
+                  }}
+                >
+                  done well.
+                </em>
               </h2>
             </div>
             <p>
-              Every project gets the same attention — clean architecture,
-              honest timelines, and code we'd be proud to show another senior engineer.
+              Every project gets the same attention — clean architecture, honest
+              timelines, and code we'd be proud to show another senior engineer.
             </p>
           </div>
 
@@ -213,7 +225,9 @@ const Home = () => {
                 <p>{desc}</p>
                 <div className="tags">
                   {tags.map((t) => (
-                    <span key={t} className="tag">{t}</span>
+                    <span key={t} className="tag">
+                      {t}
+                    </span>
                   ))}
                 </div>
               </motion.div>
@@ -228,11 +242,22 @@ const Home = () => {
           <div className="section-header">
             <div>
               <span className="eyebrow">How we work</span>
-              <h2>A process, <em style={{ fontStyle: 'italic', color: 'var(--accent)', fontWeight: 300 }}>not&nbsp;a&nbsp;pitch.</em></h2>
+              <h2>
+                A process,{" "}
+                <em
+                  style={{
+                    fontStyle: "italic",
+                    color: "var(--accent)",
+                    fontWeight: 300,
+                  }}
+                >
+                  not&nbsp;a&nbsp;pitch.
+                </em>
+              </h2>
             </div>
             <p>
-              No long sales cycles. No vague proposals. We move from "hello"
-              to a working prototype in under two weeks.
+              No long sales cycles. No vague proposals. We move from "hello" to
+              a working prototype in under two weeks.
             </p>
           </div>
 
@@ -259,19 +284,35 @@ const Home = () => {
       <section className="stats" style={{ padding: 0 }}>
         <div className="stats-grid">
           <div className="stat">
-            <span className="num"><em><CountUp end={12} suffix="+" /></em></span>
+            <span className="num">
+              <em>
+                <CountUp end={12} suffix="+" />
+              </em>
+            </span>
             <span className="label">Projects delivered</span>
           </div>
           <div className="stat">
-            <span className="num"><em><CountUp end={100} suffix="%" /></em></span>
+            <span className="num">
+              <em>
+                <CountUp end={100} suffix="%" />
+              </em>
+            </span>
             <span className="label">On-time delivery</span>
           </div>
           <div className="stat">
-            <span className="num"><em><CountUp end={24} suffix="h" /></em></span>
+            <span className="num">
+              <em>
+                <CountUp end={24} suffix="h" />
+              </em>
+            </span>
             <span className="label">Quote turnaround</span>
           </div>
           <div className="stat">
-            <span className="num"><em><CountUp end={30} suffix="d" /></em></span>
+            <span className="num">
+              <em>
+                <CountUp end={30} suffix="d" />
+              </em>
+            </span>
             <span className="label">Free post-launch support</span>
           </div>
         </div>
@@ -292,15 +333,28 @@ const Home = () => {
             <span className="eyebrow">Let's build</span>
             <h2>
               Have an idea? <br />
-              <em style={{ fontStyle: 'italic', color: 'var(--accent)', fontWeight: 300 }}>
+              <em
+                style={{
+                  fontStyle: "italic",
+                  color: "var(--accent)",
+                  fontWeight: 300,
+                }}
+              >
                 Let's make it real.
               </em>
             </h2>
             <p>
-              Tell us what you're building. We'll send a written scope and
-              fixed quote within 24 hours.
+              Tell us what you're building. We'll send a written scope and fixed
+              quote within 24 hours.
             </p>
-            <div style={{ display: 'inline-flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+            <div
+              style={{
+                display: "inline-flex",
+                gap: "1rem",
+                flexWrap: "wrap",
+                justifyContent: "center",
+              }}
+            >
               <Link to="/contact" className="btn btn-primary">
                 Start a project <ArrowUpRight size={16} />
               </Link>
