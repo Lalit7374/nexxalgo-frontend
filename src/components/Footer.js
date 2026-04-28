@@ -51,31 +51,25 @@ const Footer = () => {
             <h5>Connect</h5>
             <ul>
               <li>
-                <a href="mailto:alphadeveloper.tech@gmail.com" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Mail size={14} /> alphadeveloper.tech@gmail.com
+                <a href="info@nexxalgo.com" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <Mail size={14} /> info@nexxalgo.com
                 </a>
               </li>
-              <li>
-                <a href="https://github.com" target="_blank" rel="noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Github size={14} /> GitHub
-                </a>
-              </li>
+              
               <li>
                 <a href="https://linkedin.com/in/shivraj-chourasia-917310344" target="_blank" rel="noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
                   <Linkedin size={14} /> LinkedIn
                 </a>
               </li>
-              <li>
-                <a href="https://twitter.com" target="_blank" rel="noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
-                  <Twitter size={14} /> Twitter
-                </a>
-              </li>
+             
             </ul>
           </div>
         </div>
 
         <div className="footer-bottom">
-          <span>© {new Date().getFullYear()} Nexx Algo · Built in India</span>
+         <span>
+  © {new Date().getFullYear()} Nexx Algo · Built in India 🇮🇳
+</span>
           <span>All systems operational</span>
         </div>
       </div>
