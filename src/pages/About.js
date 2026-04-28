@@ -58,8 +58,8 @@ const About = () => {
                 because we believe in growing the next generation of engineers
                 the same way we'd want to be taught.
               </p>
-             <p className="!text-white !font-bold text-lg">
-  Founded by Shivraj Chourasia, we operate out of India and serve
+ <p>
+  Founded by <span style={{ color: "white", fontWeight: "bold" }}>Shivraj Chourasia</span>, we operate out of India and serve
   clients worldwide. Direct communication, fixed timelines, and
   code we'd be proud to show another senior engineer — that's the
   whole pitch.
