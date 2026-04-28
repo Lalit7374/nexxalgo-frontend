@@ -95,14 +95,14 @@ const Home = () => {
       <section className="hero">
         <VantaBackground intensity="normal" />
         <div className="container hero-content">
-          <motion.span
+          {/* <motion.span
             className="eyebrow"
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
           >
             Software Studio · Est. 2024
-          </motion.span>
+          </motion.span> */}
 
           <motion.h1
             initial={{ opacity: 0, y: 24 }}
