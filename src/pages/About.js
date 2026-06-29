@@ -59,7 +59,7 @@ const About = () => {
                 the same way we'd want to be taught.
               </p>
           <p>
-  Founded by <span style={{ color: "white", fontWeight: "bold" }}>Shivraj Chourasia</span> and <span style={{ color: "white", fontWeight: "bold" }}>Lalit</span>, who serves as Co-Founder & CFO, we operate out of India and serve
+  Founded by <span style={{ color: "white", fontWeight: "bold" }}>Shivraj Chourasia</span> and <span style={{ color: "white", fontWeight: "bold" }}>Lalit</span> , who serves as Co-Founder & CFO, we operate out of India and serve
   clients worldwide. Direct communication, fixed timelines, and
   code we'd be proud to show another senior engineer — that's the
   whole pitch.
