@@ -57,7 +57,7 @@ const Footer = () => {
               </li>
               
               <li>
-                <a href="https://linkedin.com/in/shivraj-chourasia-917310344" target="_blank" rel="noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
+                <a href="https://www.linkedin.com/company/nexxalgo/" target="_blank" rel="noreferrer" style={{ display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }}>
                   <Linkedin size={14} /> LinkedIn
                 </a>
               </li>
